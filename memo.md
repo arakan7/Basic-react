@@ -1,5 +1,15 @@
 # 学習メモ
 
+- reactのお作法
+
+  - ```javascript
+    import React from "react";
+    import ReactDom from "react-dom";
+    import App from "./App";
+
+    ReactDom.render(<App />, document.getElementById("root"));
+    ```
+
 - JSX記法とは
   - JSの中でreturnして、その中でhtmlタグを書くやり方
   - 複数行書くときはreturn()
@@ -7,7 +17,14 @@
     - &lt;div&gt;&lt;/div&gt;
     - &lt;React.Fragment&gt;&lt;/React.Fragment&gt;
     - &lt;&gt;&lt;&gt;（← れが一番）
-
+- コンポーネントの使い方
+  - コンポーネント名は必ず先頭が大文字
+  - コンポーネント名はパスカルケース（例：SomeComponent）
+  - コンポーネント名とその中に使用する関数名は同じにするべき？
+  - import React from "react" は必須（JSX記法を書くのみ場合は不要）
+  - export default 関数名
+  - import 関数名 from 対象コンポーネント
+  - .jsxはreactのコンポーネント拡張子
 
 ## 環境構築
 
