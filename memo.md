@@ -38,7 +38,24 @@
 - Stateについて
   - 各コンポーネントが持つ状態
   - Stateが変更されると再レンダリングされる
-  - const [state（動的に変わる変数）, setState（stateを更新するための関数）] = useState(初期値)
+
+  - ```javascript
+    const [state（動的に変わる変数）, setState（stateを更新するための関数）] = useState(初期値)
+    ```
+
+- React再レンダリングとuseEffectについて
+  - stateは一番最初に書くとよい
+  - a && b … aがtrueの時はbを返す
+  - a || b … aがfalseの時はbを返す
+  - コンポーネントは上から順に処理し、returnでレンダリングし、途中でstate, props（親子両方）の更新があったときにreactはそれを感知してまた上から順に処理しレンダリングしていく（差分のみ）
+
+  - ```javascript
+    useEffect(() => {
+      処理
+    }, [監視するstate])
+    ```
+
+  - 監視するstateが空の場合は初期表示の時だけ処理される
 
 ## 環境構築
 
