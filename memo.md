@@ -56,6 +56,12 @@
     ```
 
   - 監視するstateが空の場合は初期表示の時だけ処理される
+- default export と exportについて
+  - default exportの場合
+    - import 好きな名前（だいたいコンポーネント名） from 対象のコンポーネント
+  - export の場合
+    - import {コンポーネント名} from 対象のコンポーネント
+  - exportで書いたほうがコンポーネント名は間違いない
 
 ## 環境構築
 

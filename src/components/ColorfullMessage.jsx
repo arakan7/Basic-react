@@ -1,6 +1,6 @@
 import React from "react";
 
-const ColorfullMessage = (props) => {
+export const ColorfullMessage = (props) => {
     const { color, children } = props;
 
     const contentStyle = {
@@ -14,5 +14,3 @@ const ColorfullMessage = (props) => {
         </>
     );
 };
-
-export default ColorfullMessage;
