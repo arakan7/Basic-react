@@ -1,6 +1,6 @@
 # 学習メモ
 
-- reactのお作法
+- Reactのお作法
 
   - ```javascript
     import React from "react";
@@ -10,14 +10,14 @@
     ReactDom.render(<App />, document.getElementById("root"));
     ```
 
-- JSX記法とは
+- JSX記法について
   - JSの中でreturnして、その中でhtmlタグを書くやり方
   - 複数行書くときはreturn()
   - returnしていくhtmlタグは一つのタグで囲わないといけない
     - &lt;div&gt;&lt;/div&gt;
     - &lt;React.Fragment&gt;&lt;/React.Fragment&gt;
     - &lt;&gt;&lt;&gt;（← れが一番）
-- コンポーネントの使い方
+- コンポーネントについて
   - コンポーネント名は必ず先頭が大文字
   - コンポーネント名はパスカルケース（例：SomeComponent）
   - コンポーネント名とその中に使用する関数名は同じにするべき？
@@ -25,6 +25,10 @@
   - export default 関数名
   - import 関数名 from 対象コンポーネント
   - .jsxはreactのコンポーネント拡張子
+- Reactでのイベントやstyleの扱い方について
+  - イベント名やスタイルはキャメルケース（例：someEvent）
+  - JSX記法の中に{}書くとjsが使用できる
+  - {{}}だと、内側の{}はオブジェクトのことを表す
 
 ## 環境構築
 
